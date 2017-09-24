@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/flexboxgrid.css" type="text/css">
+    <link rel="stylesheet" href="../css/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="../css/style.css" type="text/css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="../js/chat.js"></script>
+</head>
+<body>
+    <header id="main-title">
+        <div class="container">
+                <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                        <h1>Welcome to Chat App</h1>
+                    </div>
+                </div>
+        </div>
+    </header>
+    <section id="message-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="displaymessage">
+                </div>
+            </div>
+        </div>
+    </section> 
+    
+    <section id="sendmessage">
+            <div class="container">
+                   <div class="row center-xs center-sm center-md center-lg middle-xs middle-sm middle-md middle-lg">
+                        <div class="col-xs-9 col-sm-11 col-md-11 col-lg-11 message-content">
+                            <input type="text" class="form-control" placeholder="Please type your message...">
+                        </div>
+                        <div class="col-xs-3 col-sm-1 col-md-1 col-lg-1">
+                                <button class="btn btn-primary" onclick="sendmessage()">Send</button>
+                            </div>
+
+                   </div>
+            </div>
+    </section>   
+</body>
+</html>
