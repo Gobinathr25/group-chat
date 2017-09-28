@@ -1,0 +1,14 @@
+body{
+    background-image: url('../assests/images/background.jpg');
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-class h1{
+    color:white;
+}
+#userapplication .container{
+    height:100%;
+}
+
+#userapplication .row{
+    height: 500px;
+}
